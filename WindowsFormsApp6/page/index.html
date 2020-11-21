@@ -1,0 +1,17 @@
+﻿
+<p>Hello</p>
+
+<button type="button" onclick="call_cs()">
+    SEND
+</button>
+
+<script>
+    function func1(str1) {
+        alert("C# called>" + str1);
+        return "success";
+    }
+
+    function call_cs() {
+        chrome.webview.hostObjects.aaa.MessageShow("OKPK");
+    }
+</script>
